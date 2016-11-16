@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+body{
+	margin:0px;
+	padding: 10px;
+	background-color: lightblue;
+}
+h2, h3, h4{
+	font-family: Ubuntu, Arial;
+	color: brown;
+	
+}
