@@ -1,6 +1,6 @@
 On Server (192.168.56.101)
 Copy configuration template (password is password123$ ):
-    sudo cp /etc/nagios3/conf.d/localhost_nagios2.cfg /etc/nagios3/conf.d/node1.cfgd
+    sudo cp /etc/nagios3/conf.d/localhost_nagios2.cfg /etc/nagios3/conf.d/node1.cfg
     
 Edit the new configuration :
     sudo nano /etc/nagios3/conf.d/node1.cfg
