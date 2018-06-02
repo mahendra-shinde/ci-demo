@@ -1,0 +1,31 @@
+On Server (192.168.56.101)
+Copy configuration template (password is password123$ ):
+    sudo cp /etc/nagios3/conf.d/localhost_nagios2.cfg /etc/nagios3/conf.d/node1.cfgd
+    
+Edit the new configuration :
+    sudo nano /etc/nagios3/conf.d/node1.cfg
+
+Now, once file opened for editing, replace every 
+occurance of "localhost" with "node1"
+and replace "127.0.0.1" with "192.168.56.102"
+
+To Save file press "Ctrl+W"
+To Exit editor press "Ctrl+X"
+
+To Restart nagios:
+    sudo systemctl restart nagios3
+
+ON Target node (192.168.56.102)
+Edit the configuration file:
+    sudo nano /etc/nagios/nrpe.cfg
+
+Now, find property "allowed_hosts" and put "192.168.56.101"
+And, find line"
+
+
+To Save press "Ctrl+W"
+To Exit editor "Ctrl+X"
+
+To restart nagios nrpe server 
+  sudo systemctl restart nagios-nrpe
+  
