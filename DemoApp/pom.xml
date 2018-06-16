@@ -6,4 +6,5 @@
   <packaging>war</packaging>
   <name>Demo App </name>
   <description>Demo App for CI</description>
+  
 </project>
