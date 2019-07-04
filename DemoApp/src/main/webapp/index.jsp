@@ -13,7 +13,7 @@ This is a demo application<br/>
   <h3>Modified by Mahendra</h3>
 </p>
 <div style="position:absolute; bottom: 5px;">
-  <h2>You are being served from server : <%= request.getRemoteAddress() %> </h2>
+  <h2>You are being served from server : <%= request.getLocalAddr() %> </h2>
 </div>
 </body>
 </html>
