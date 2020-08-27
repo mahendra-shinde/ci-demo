@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="resources/style.css" type="text/css"/>
 </head>
 <body>
-<h2 style="color:brown">Demo App</h2>
+<h2 style="color:cyan">Demo App</h2>
 <p>
 This is a demo application<br/>
   <h2>This application was built using Jenkins and Maven</h2>
