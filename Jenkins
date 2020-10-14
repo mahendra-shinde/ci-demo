@@ -4,16 +4,16 @@ node {
       // Get some code from a GitHub repository
       git 'https://github.com/mahendra-shinde/ci-demo.git'
       // Get the Maven tool.
-      // ** NOTE: This 'M2' Maven tool must be configured
+      // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
-      mvnHome = tool 'M2'
+      mvnHome = tool 'M3'
    }
    stage('Build') {
       // Run the maven build
       if (isUnix()) {
-         sh "'${mvnHome}/bin/mvn' -f DemoApp/pom.xml -Dmaven.test.failure.ignore clean package"
+         sh "'${mvnHome}/bin/mvn' -f DemoApp/pom.xml  clean package"
       } else {
-         bat(/"${mvnHome}\bin\mvn" -f DemoApp\pom.xml -Dmaven.test.failure.ignore clean package/)
+         bat(/"${mvnHome}\bin\mvn" -f DemoApp\pom.xml  clean package/)
       }
    }
    stage('Results') {
